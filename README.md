@@ -1,6 +1,5 @@
 # StockpileBot Documentation
 
-
 ## Introduction
 StockpileBot is a discord bot used for stockpile management for the MMO wargame Foxhole.
 The bot’s main functions are centered around tracking stockpiles and performing query and data visualization actions on the gathered data.
@@ -8,39 +7,38 @@ The bot’s main functions are centered around tracking stockpiles and performin
 ## Bot Permissions
 The bot only needs 3 permissions:
 Read messages - needed for reading query & plot messages
-Send messages - self-explainatory
+Send messages - self-explanatory
 Attach files - needed for sending images of item plotting results
 
-## User Permission Levels
-There are 3 permission levels that the bot uses: Everyone, NCO and Officer.
-
-Querying & plotting commands are available to everyone as they are intended to be public; 
-If there is a need to block this command, disallow the bot from seeing the channels in which you do not want it to respond.
-
-The NCO permission level commands fall under 4 categories:
-Those that display some configurations, such as the /targets view command
-Those used for updating unlocked tech
-The /stockpiles upload and /refresh-spreadsheet commands, used for uploading stockpile data and keeping cached data up-to-date
-QOL commands, such as /spreadsheet-link
-
-Officers have access to all commands.
+## Setting permissions
+When the bot is first added, the server owner needs to assigned a admin role.
+After the role is assigned, admins can use /settings to set permissions to individual functionalities of the bot.
 
 ## Command Tree Overview
 ```
+settings
 priorities ───┬─── view
               ├─── add
               ├─── remove
-              └─── generate
-settings ────── view
+              ├─── generate
+              └─── update
 targets ───┬─── view
+           ├─── edit-presets
            └─── set
 tech ───┬─── view
         ├─── set-starting
         ├─── add
         ├─── remove
-        └─── reset
-stockpiles ───┬─── view
-              └─── upload
+        ├─── reset
+        └─── auto-tech
+stockpiles ───┬─── edit
+              ├─── upload
+              ├─── list-codes
+              ├─── code-button
+              ├─── overview
+              └─── verify
+transport-tasks ───┬─── generate
+                   └─── update
 refresh-spreadsheet
 spreadsheet-link
 info
@@ -55,22 +53,22 @@ Displays all items to be checked when generating the priorities.
 
 #### Add
 Add an item to be checked.
-Remove
+#### Remove
 Remove an item from the list of checked items.
-Generate
+#### Generate
 Generate a message with the list. These messages update every 4 hours, so try not to spam them. Items that are in the checked items list, but not teched will not be added to the list
 
 ### Settings
 This module is used for viewing and editing the bot’s settings.
-View
+#### View
 View (and edit) the settings.
 
 ### Targets
 This module is used for tracking and setting the target amounts of items, expressed in crates
-####View
+#### View
 View the target amounts.
 
-####Set
+#### Set
 Set a target amount for an item.
 
 ### Tech
@@ -89,7 +87,7 @@ Reset the tech to only the starting tech items. You should only use on the start
 
 ### Stockpiles
 This module is used for editing tracked stockpiles/depots and uploading the stockpile data to the linked spreadsheet.
-####View
+#### View
 View and edit/delete tracked stockpiles/depots
 
 #### Upload
@@ -113,7 +111,9 @@ The bot can currently only read/write data from/to Google Sheets spreadsheets. T
 
 It is recommended that the spreadsheet is cleared/changed on every start of war as to maximize performance.
 
-
+## Disclaimer
+All per-server data, such as settings, depots including __depot passcodes__ are stored __unencrypted__ at this point in time.
+I can guarantee that I WILL __NOT__ read the data unless requested by the respective server owner.
 
 ## Credits
 Bot created by: [UCF] Swiftyjax (discord: swiftyjax)
