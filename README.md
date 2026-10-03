@@ -75,14 +75,14 @@ Set a target amount for an item.
 
 ### Tech
 This module is used for tracking and editing the tech status.
-####View
+#### View
 View the tech. The T column stands for currently teched items, and the S column stands for items that are starting (Day 0) tech.
 
-####Set Starting
+#### Set Starting
 Set if an item is starting (Day 0) tech
-####Add
+#### Add
 Add an item to the currently teched items list
-####Remove
+#### Remove
 Remove an item from the currently teched items list
 ####Reset
 Reset the tech to only the starting tech items. You should only use on the start of a new war.
@@ -92,11 +92,11 @@ This module is used for editing tracked stockpiles/depots and uploading the stoc
 ####View
 View and edit/delete tracked stockpiles/depots
 
-####Upload
+#### Upload
 Opens a modal allowing the user to upload their MapData.sav file to the linked spreadsheet.
 
 
-####Querying & Plotting
+#### Querying & Plotting
 Querying items and plotting the amounts over time is available via message commands.
 
 To query an item, simply type “How many <item> do we have” in any text channel which the bot has access to. You will receive the query results as a response.
