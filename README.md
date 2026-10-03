@@ -56,7 +56,9 @@ Add an item to be checked.
 Remove an item from the list of checked items.
 #### generate
 Generate a message with the list. These messages update every 4 hours, so try not to spam them. Items that are in the checked items list, but not teched will not be added to the list
+
 ![](/assets/production_prios.png)
+
 #### update
 Manually update the currently active priorities message.
 
@@ -67,7 +69,9 @@ This command is used for viewing and editing the bot's settings.
 This module is used for tracking and setting the target amounts of items, expressed in crates
 #### view
 View the target amounts.
+
 ![](/assets/targets.png)
+
 #### set
 Set a target amount for an item.
 #### edit-presets
@@ -77,7 +81,9 @@ Change or add targets presets.
 This module is used for tracking and editing the tech status.
 #### view
 View the tech. The T column stands for currently teched items, and the S column stands for items that are starting (Day 0) tech.
+
 ![](/assets/tech_view.png)
+
 #### set-starting
 Set if an item is starting (Day 0) tech
 #### add
@@ -93,7 +99,9 @@ Automatically marked items as tech depending on their presence in the spreadshee
 This module is used for editing tracked stockpiles/depots and uploading the stockpile data to the linked spreadsheet.
 #### view
 View and edit/delete tracked stockpiles/depots
+
 ![](/assets/depot_list.png)
+
 #### upload
 Opens a modal allowing the user to upload their MapData.sav file to the linked spreadsheet.
 #### list-codes
@@ -109,7 +117,9 @@ Allows for mass queries of items.
 This module is centered around the transport tasks message. Transport tasks are a collection of auto-generated tasks telling players where to move different items.
 #### generate
 Generate the transport tasks message. Limited to 1 per server.
+
 ![](/assets/transport_tasks.png)
+
 #### update
 Update the currently active transport tasks message.
 
@@ -117,14 +127,15 @@ Update the currently active transport tasks message.
 Querying items and plotting the amounts over time is available via message commands.
 
 To query an item, simply type "How many <item> do we have" in any text channel which the bot has access to. You will receive the query results as a response.
+
 ![](/assets/query.png)
 
-
 To plot an item, type "plot <item>" and you will receive the plotting result as a response.
+
 ![](/assets/plot_item.png)
 
-
 If you type "plot all", the result will instead plot by all items in depots.
+
 ![](/assets/plot_all.png)
 
 
