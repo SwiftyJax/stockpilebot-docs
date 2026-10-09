@@ -1,5 +1,3 @@
-# StockpileBot Documentation
-
 ## Introduction
 StockpileBot is a discord bot used for stockpile management for the MMO wargame Foxhole.
 The bot’s main functions are centered around tracking stockpiles and performing query and data visualization actions on the gathered data.
