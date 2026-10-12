@@ -140,17 +140,19 @@ If you type "plot all", the result will instead plot by all items in depots.
 ## Data Sources
 The bot can currently only read/write data from/to Google Sheets spreadsheets. The spreadsheet to be used must be either viewable/editable by everyone, or the bot’s service account (stockpile-bot@stockpile-bot.iam.gserviceaccount.com) needs to be allowed to view/edit the spreadsheet.
 
-It is recommended that the spreadsheet is cleared/changed on every start of war as to maximize performance.
+It is recommended that the spreadsheet is cleared/changed on every war start as to maximize performance.
 
 ## Disclaimer
 All per-server data, such as settings, depots including __depot passcodes__ are stored __unencrypted__ at this point in time.
 I can guarantee that I WILL __NOT__ read the data unless requested by the respective server owner.
 
 ## Credits
-Bot created by: [UCF] Swiftyjax (discord: swiftyjax)
+Bot created by: [UCF] SwiftyJax (discord: swiftyjax)
 
 Special thanks to: 
 [UCF] ...
+
 [UCF] Vexx
+
 [UCF] Biggus Flickkus
 		
