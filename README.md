@@ -136,7 +136,7 @@ If you type "plot all", the result will instead plot by all items in depots.
 
 ![](/assets/plot_all.png)
 
-## War start procedure
+## War Start Procedure
 Once a new war has started, there are a few things I recommend doing:
 
 1) Create a new spreadsheet for stockpile data and change the used one in /settings
