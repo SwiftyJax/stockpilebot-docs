@@ -139,9 +139,9 @@ If you type "plot all", the result will instead plot by all items in depots.
 ## War Start Procedure
 Once a new war has started, there are a few things I recommend doing:
 
-1) Create a new spreadsheet for stockpile data and change the used one in /settings
-2) Reset tech with /tech reset
-3) Clear all depots in /stockpiles edit
+1) Create a new Google Sheets spreadsheet for stockpile data and change the used one in /settings 
+2) Reset tech with /tech reset 
+3) Clear all depots in /stockpiles edit 
 
 ## Data Sources
 The bot can currently only read/write data from/to Google Sheets spreadsheets. The spreadsheet to be used must be either viewable/editable by everyone, or the bot’s service account (stockpile-bot@stockpile-bot.iam.gserviceaccount.com) needs to be allowed to view/edit the spreadsheet.
@@ -155,10 +155,8 @@ I can guarantee that I WILL __NOT__ read the data unless requested by the respec
 ## Credits
 Bot created by: [UCF] SwiftyJax (discord: swiftyjax)
 
-Special thanks to: 
-[UCF] ...
-
-[UCF] Vexx
-
-[UCF] Biggus Flickkus
+Special thanks to:  
+[UCF] ...  
+[UCF] Vexx  
+[UCF] Biggus Flickkus  
 		
